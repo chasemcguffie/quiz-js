@@ -4,17 +4,15 @@ const plural = arr.map(x => x + 's');
 
 console.log(plural)
 
+const randNumb = Math.random() * (6 - 1) + 1;
 class Die {
-    constructor (value) {
-        this.value = value;
+    constructor () {
+        this.value = Math.round(randNumb);
+        }
     }
-    get roll() {
-        return this.value = roll();
-    }
-    roll() {
-        return Math.random() * (6 - 1) + 1;
-    }
-}
+
+var newDie = new Die()
+console.log(newDie.value)
 
 const friends = ['mike', 'bill', 'ted', 'emma', 'dan', 'frank', 'ben', 'bob', 'jeff', 'tony']
 let x = 0;
